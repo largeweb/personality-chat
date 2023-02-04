@@ -3,7 +3,7 @@ const fs = require('fs');
 const http = require('http');
 const https = require('https');
 const express = require('express');
-// const path = require('path');
+const path = require('path');
 // const readline = require('readline');
 const { urlencoded } = require('express');
 const app = express();
@@ -31,7 +31,7 @@ httpsServer.listen(443, () => {
 });
 
 //SETUP EXPRESS
-// app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'build')));
 app.use(urlencoded({ extended: true }));
 // app.use(upload.array());
 app.use(express.static('public'));

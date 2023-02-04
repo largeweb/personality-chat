@@ -33,7 +33,7 @@ httpsServer.listen(443, () => {
 //SETUP EXPRESS
 // app.use(express.static(path.join(__dirname, 'build')));
 app.use(urlencoded({ extended: true }));
-app.use(upload.array());
+// app.use(upload.array());
 app.use(express.static('public'));
 
 // Redirect all HTTP traffic to HTTPS

@@ -92,3 +92,7 @@ app.post('/gpt-gen/', (req, res) => {
         });
     } catch (error) { console.log(error); }
 });
+
+app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});

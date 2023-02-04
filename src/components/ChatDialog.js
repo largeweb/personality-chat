@@ -33,7 +33,7 @@ function ChatDialog({cn, cg, bp, ep, ubp, uep, cbp, cep, lm}) {
     console.log("f is ");
     console.log(f);
     try {
-      const response = await fetch('https://personality.chat:5000/gpt-gen', {
+      const response = await fetch('https://139.144.173.69:5000/gpt-gen', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', },
         body: JSON.stringify({input:f}),

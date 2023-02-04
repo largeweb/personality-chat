@@ -4,11 +4,22 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+// import StandardChat from './StandardChat';
+// import ChadGPT from './ChadGPT';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        {/* <Route path="/ChadGPT" element={<ChadGPT username={'ChadGPT'} />} /> */}
+        {/* <Route path="/dealer" element={<StandardChat username={'dealer'} />} />
+        <Route path="/onlyfans" element={<StandardChat username={'onlyfans'} />} /> */}
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

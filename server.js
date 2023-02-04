@@ -22,7 +22,7 @@ const credentials = {
 };
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
-import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 dotenv.config();
 
 //STARTUP SERVERS

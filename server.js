@@ -73,6 +73,7 @@ app.get('/', function (req, res) {
 });
 
 app.post('/gpt-gen/', (req, res) => {
+    console.log("GPT GEN REQUESTED")
     try {
         let input = req.body.input;
         input = input.replace(/\n/g, " ");

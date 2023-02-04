@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 // import StandardChat from './StandardChat';
 // import ChadGPT from './ChadGPT';
+import Dealer from './pages/Dealer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/dealer" element={<Dealer />} />
         {/* <Route path="/ChadGPT" element={<ChadGPT username={'ChadGPT'} />} /> */}
         {/* <Route path="/dealer" element={<StandardChat username={'dealer'} />} />
         <Route path="/onlyfans" element={<StandardChat username={'onlyfans'} />} /> */}
